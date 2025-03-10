@@ -38,7 +38,23 @@ CREATE TABLE carrinho(
 
 -- tabela de loja (marcos)
 
--- tabela de relatorios(levi)
+-- tabela de login ADM(levi)
+CREATE TABLE usuario_adm (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome_adm VARCHAR(100) NOT NULL,
+    email_adm VARCHAR(100) UNIQUE NOT NULL,
+    senha_adm VARCHAR(255) NOT NULL,  
+    perfil_adm ENUM('admin', 'usuario') DEFAULT 'admin',
+    
+);
 
 -- tabela de inventario (arthur)
+CREATE TABLE Inventario(
+    id_inventario INT PRIMARY KEY AUTO_INCREMENT, 
+    nome_produto VARCHAR(255) NOT NULL, 
+    descricao TEXT
+    quantidade INT NOT NULL,
+    preco_unitario VARCHAR(255) NOT NULL,
+    data_entrada DATE,
+);
 
