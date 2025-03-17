@@ -3,11 +3,18 @@ CREATE DB BOBINDUSTRIA
 SELECT DB BOBINDUSTRIA
 
 -- tabela de usuario (pedro)
+CREATE TABLE usuario (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY
+    nome_user VARCHAR (255)
+    email_user VARCHAR(255)
+    senha_user VARCHAR(255)
+    perfil_user ENUM('admin', 'usuario') DEFAULT 'usuario',
+)
 
 -- tabela de produto (kenny)
 CREATE TABLE IF EXISTS produtos(
     id_produto INT AUTO_INCREMENT PRIMARY KEY, 
-    deacricao TEXT,
+    descricao TEXT,
     preco varchar(255)
     nome varchar (100) NOT NULL,
     quantidade_estq INT NOT NULL DEFAULT 0,
