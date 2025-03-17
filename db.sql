@@ -16,7 +16,7 @@ CREATE TABLE IF EXISTS produtos(
 --tabela de categoria (fares)
 create table categorias (
     id_cate int PRIMARY KEY AUTO_INCREMENT,
-    catename varchar(255)
+    categ_name varchar(255)
 );
 -- tabela de carrinho(fares)
 CREATE TABLE carrinho(
@@ -34,9 +34,6 @@ CREATE TABLE carrinho(
         data_pagamento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (id_carrinho) REFERENCES carrinho(id)
     );
--- tabela de vendas (taylor)
-
--- tabela de loja (marcos)
 
 -- tabela de login ADM(levi)
 CREATE TABLE usuario_adm (
