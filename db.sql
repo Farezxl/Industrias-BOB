@@ -5,9 +5,9 @@ SELECT DB BOBINDUSTRIA
 -- tabela de usuario (pedro)
 CREATE TABLE usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY
-    nome_user VARCHAR (255)
-    email_user VARCHAR(255)
-    senha_user VARCHAR(255)
+    nome_user VARCHAR (255) NOT NULL,
+    email_user VARCHAR(255) NOT NULL,
+    senha_user VARCHAR(255) NOT NULL,
     perfil_user ENUM('admin', 'usuario') DEFAULT 'usuario',
 )
 
@@ -15,7 +15,7 @@ CREATE TABLE usuario (
 CREATE TABLE IF EXISTS produtos(
     id_produto INT AUTO_INCREMENT PRIMARY KEY, 
     descricao TEXT,
-    preco varchar(255)
+    preco varchar(255),
     nome varchar (100) NOT NULL,
     quantidade_estq INT NOT NULL DEFAULT 0,
 
@@ -23,13 +23,13 @@ CREATE TABLE IF EXISTS produtos(
 --tabela de categoria (fares)
 create table categorias (
     id_cate int PRIMARY KEY AUTO_INCREMENT,
-    categ_name varchar(255)
+    categ_name varchar(255),
 );
 -- tabela de carrinho(fares)
 CREATE TABLE carrinho(
     id_carrinho PRIMARY KEY AUTO_INCREMENT,
-    id_usuario
-    id_produto int NOT NULL,
+    id_usuario  INT NOT NULL,
+    id_produto INT NOT NULL,
     FOREIGN KEY (id_produto) REFERENCES produtos(id),
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
 );
@@ -56,7 +56,7 @@ CREATE TABLE usuario_adm (
 CREATE TABLE Inventario(
     id_inventario INT PRIMARY KEY AUTO_INCREMENT, 
     nome_produto VARCHAR(255) NOT NULL, 
-    descricao TEXT
+    descricao TEXT,
     quantidade INT NOT NULL,
     preco_unitario VARCHAR(255) NOT NULL,
     data_entrada DATE,
