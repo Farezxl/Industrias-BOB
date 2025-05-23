@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Projeto Novo</string>
+    <string name="fraseEfeito">Mire as estrelas e salte o mais alto que der.</string>
+    <string name="texto">Digite suas credenciais para continuar</string>
+    <string name="nome">Nome</string>
+    <string name="anoNasc">Ano Nascimento</string>
+    <string name="salvarInfo">Salvar informações de login</string>
+    <string name="entrar">Entrar</string>
+    <string name="raio">Digite o raio do cálculo</string>
+    <string name="botaoCalc">CALCULAR</string>
+    <string name="texto1">A area do circulo é: </string>
+    <string name="texto2">A circunferencia é:</string>
+</resources>

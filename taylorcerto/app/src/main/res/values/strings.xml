@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">taylorcerto</string>
+    <string name="login_text">Login:</string>
+    <string name="password_text">Senha:</string>
+    <string name="main_text">Digite as suas credenciais para continnuar!</string>
+    <string name="frase_topo">Quem não arrisca não petisca.</string>
+    <string name="button_continue">Continuar</string>
+</resources>
