@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1C4884"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="210dp"
+        android:layout_height="435dp"
+        app:srcCompat="@drawable/carrocho_fucapi" />
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="email:"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="senha:"
+        android:inputType="text"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFDFD" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="assertive"
+        android:background="#FFFFFF"
+        android:backgroundTint="#002196F3"
+        android:backgroundTintMode="add"
+        android:breakStrategy="high_quality"
+        android:drawableTint="#FFFFFF"
+        android:fadingEdge="horizontal|vertical"
+        android:inputType="number|numberDecimal"
+        android:shadowColor="#FFFFFF"
+        android:text="entrar"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:iconTint="#FFFFFF"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#FFFFFF" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="151dp"
+        android:layout_height="181dp"
+        app:srcCompat="@drawable/images" />
+
+</LinearLayout>
